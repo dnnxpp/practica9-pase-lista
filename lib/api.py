@@ -7,7 +7,7 @@ from sqlalchemy import create_engine, Column, Integer, String, Double, Text, TIM
 from sqlalchemy.orm import sessionmaker, declarative_base, Session
 
 # Configuración de conexión a MySQL
-DATABASE_URL = "mysql+pymysql://root:@localhost/asistencia_gps"
+DATABASE_URL = "mysql+pymysql://root:huevos123@localhost/asistencia_gps"
 
 engine = create_engine(DATABASE_URL)
 SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)
